@@ -1,7 +1,8 @@
 # Probabilistic Value Function Research
 
-This repo will consist of three files. 
- - The first, `prob_val_writeup_clean.ipynb`, consists of a novel implementation of a probabilistic value head for actor-critic reinforcement learning, and the code required to evaluate it and compare it to the two most prominent probabilstic PPO implementations identified in existing literature.
- - The second, `Distributional PPO Writeup.pdf`, summarizes the results of this comparison, positing that it results in substantially reduced KL divergence from the ground truth state value distribution.
-   - The third, `RLlib_AlphaStar.ipynb`, is an augmented implementation of AlphaStar in RLlib, which is referenced in the appendix.
-   - The appendix of the writeup consists of an in-depth discussion of the research process associated with this project, and its context within a larger project that I've undertaken.
+Some content involving probabilistic value in PPO. There's also an RLlib implementation of AlphaStar, stored here because it was relevant to a writeup I was working on.
+
+`prob_val.ipynb` contains:
+ - Implementations of EPPO, Beta-NLL, and generic probabilistic value loss in RLlib.
+ - A script to quantitatively compare the value distribution modeling behavior of all three on a toy environment.
+ - Sample results of this script.
